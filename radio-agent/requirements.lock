@@ -1,0 +1,12 @@
+# Third-party versions validated on macOS / Python 3.13.
+# Install from repository root: pip install -r radio-agent/requirements.lock -e ./cli -e ./radio-agent
+cffi==2.1.1
+hidapi==0.15.0
+numpy==2.5.4
+pycparser==3.12
+pyserial==3.5
+python-dotenv==1.2.4
+sounddevice==0.5.6
+soxr==1.1.0
+webrtcvad-wheels==2.0.14.post1
+websockets==15.0.1

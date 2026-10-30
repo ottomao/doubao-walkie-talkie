@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "walkie-radio-agent"
+version = "0.1.0"
+description = "Half-duplex AIOC conversation with Volcengine realtime speech"
+requires-python = ">=3.11"
+dependencies = ["walkie-aioc>=0.1.0", "websockets>=15,<16", "soxr>=0.5,<2", "webrtcvad-wheels>=2.0.14,<3", "python-dotenv>=1,<2"]
+
+[project.scripts]
+radio-agent = "radio_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
